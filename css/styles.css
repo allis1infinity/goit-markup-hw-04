@@ -51,7 +51,11 @@ img {
 
 /* =========================HEADER==========================*/
 .header {
+    box-shadow:
     border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08),
  }
  
 .container-header{
@@ -142,7 +146,9 @@ img {
     gap: 40px;
 }
 
-.header-adress-item {}
+.header-adress-item {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .header-adress-item-link {
     color: inherit; 
@@ -159,10 +165,11 @@ img {
 .main-part {
     background-color: #2E2F42;   
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
-    url(../images/people-office.png);
+    url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -202,6 +209,8 @@ img {
     border: none;
     margin: 0 auto;
     padding: 16px 32px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .main-title-button::after
@@ -338,7 +347,8 @@ img {
 
 .soc-net-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 24px;
 }
 
 .soc-net-item {
@@ -357,8 +367,12 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc-net-link:hover,
-.soc-net-link:focus{
+.soc-net-link:hover {
+    background-color: #404BBF;
+}
+
+
+.soc-net-link:focus {
     background-color:#404BBF;
 }
 
@@ -391,9 +405,18 @@ fill: #f4f4fd;
     gap: 48px 24px; 
 }
 
-.portfolio-item {
-    
+.portfolio-item { 
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.portfolio-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+     
+
+
 
 .portfolio-item:hover .portfolio-cover-text {
     transform: translateY(0);
@@ -461,6 +484,7 @@ fill: #f4f4fd;
 
 .container.bottom {
     display: flex; 
+    align-items: baseline;
 }   
 
 .footer-left-part {
@@ -518,8 +542,8 @@ fill: #f4f4fd;
 
 
 
-.soc-net-link:hover {
-    background-color: #31D0AA ;
+.soc-net-link:hover{
+    background-color:#31d0aa;
 }
 
 .team-icon {
