@@ -147,7 +147,7 @@ img {
 }
 
 .header-adress-item {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-adress-item-link {
@@ -368,7 +368,7 @@ img {
 }
 
 .soc-net-link:hover {
-    background-color: #404BBF;
+    background-color:#404BBF;
 }
 
 
@@ -542,8 +542,12 @@ fill: #f4f4fd;
 
 
 
-.soc-net-link:hover{
+.soc-net-link:hover {
     background-color:#31d0aa;
+}
+
+.soc-net-link:focus {
+    background-color: #31d0aa;
 }
 
 .team-icon {
