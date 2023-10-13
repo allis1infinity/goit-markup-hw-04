@@ -51,17 +51,16 @@ img {
 
 /* =========================HEADER==========================*/
 .header {
-    box-shadow:
-    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
-    0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08),
- }
+box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+}
  
 .container-header{
     display: flex;
     align-items: center;
-   }
+}
 
 
 
@@ -148,7 +147,7 @@ img {
 
 .header-adress-item {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+}               
 
 .header-adress-item-link {
     color: inherit; 
@@ -169,7 +168,7 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-width: 1440px;
+    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
 }
@@ -367,13 +366,10 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc-net-link:hover {
-    background-color:#404BBF;
-}
 
-
+.soc-net-link:hover,
 .soc-net-link:focus {
-    background-color:#404BBF;
+    background-color: #404bbf;
 }
 
 .team-icon {
@@ -541,11 +537,7 @@ fill: #f4f4fd;
 }
 
 
-
-.soc-net-link:hover {
-    background-color:#31d0aa;
-}
-
+.soc-net-link:hover, 
 .soc-net-link:focus {
     background-color: #31d0aa;
 }
