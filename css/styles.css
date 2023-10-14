@@ -146,12 +146,12 @@ border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
 }
 
 .header-adress-item {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }               
 
 .header-adress-item-link {
     color: inherit; 
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-adress-item-link:hover ,
@@ -176,8 +176,6 @@ border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
 .container-main {
     
 }
-
-
 
 
 .main-part-title {
@@ -366,9 +364,8 @@ border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.soc-net-link:hover,
-.soc-net-link:focus {
+.team-list-item .soc-net-link:hover,
+.team-list-item .soc-net-link:focus {
     background-color: #404bbf;
 }
 
@@ -411,9 +408,6 @@ fill: #f4f4fd;
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
      
-
-
-
 .portfolio-item:hover .portfolio-cover-text {
     transform: translateY(0);
 }
